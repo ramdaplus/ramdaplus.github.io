@@ -1,7 +1,62 @@
 <!DOCTYPE html>
 <html>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <header style="background: green; padding: 17px 10px; color: white; top: 0; bottom: 0; right: 0; left: 0; font-size: 20px;">
+    <label style="margin: 10px"> Ramda Plus v0.2.9 </label>
+    <a href="src/home.html" style="margin: 10px; color: #031729;"> Home </a>
+    <a href="src/documentation.html" style="margin: 10px; color: #031729;"> Documentaion </a>
+    <a style="float: right;color: #031729;"> Github </a>
+  </header>
   <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+    <div style="padding: 10px;">
+      <div style="padding: 10px 10px; font-size: 25px; font-weight: bold; background: lightgrey;">
+        _R.sum(array, [key])
+      </div>
+      <div>
+        <div style="margin-bottom: 10px; font-size: 15px;">
+          Adds up all the elements of the array
+        </div>
+        <div style="margin-bottom: 10px;">
+          Since: 0.1.0
+        </div>
+        <div>
+          <div style="margin-bottom: 10px; font-weight: bold">
+            Arguments
+          </div>
+          <div style="margin-bottom: 10px;">
+            array (Array): The array whose sum to be calculated<br>
+            key (String): Key of objects whose sum needs to be calculated. In case of array of objects
+          </div>
+        </div>
+        <div>
+          <div style="margin-bottom: 10px; font-weight: bold;">
+            Returns
+          </div>
+          <div style="margin-bottom: 10px;">
+            (Number/Array): Returns a sum/array of sum if array of object is passed
+          </div>
+        </div>
+      </div>
+      <div>
+        <div style="margin-bottom: 10px; font-weight: bold;">
+          Example
+        </div>
+        <div style="margin-bottom: 10px; background-color: #283646; color: antiquewhite; padding: 10px;">
+          const array = [ 1,2,3,4 ];<br>
+          _R.sum(array);<br>
+          // => 10<br><br>
+          const arrayOfObjects = [ { a: 1, b: 3 }, { a: 2, b: 4 } ];<br>
+          _R.sum(arrayOfObjects, [ a, b ]);<br>
+          // => [ 3, 7 ]<br>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
