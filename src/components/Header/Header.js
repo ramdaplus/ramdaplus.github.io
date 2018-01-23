@@ -5,7 +5,7 @@ class Header extends Component {
     return (
       <header className="App-header">
         <label> Ramda Plus v0.2.9 </label>
-        <a className="App-right"> Github </a>
+        <a className="App-right" href="https://github.com/vikkyconer/ramdaplus"> Github </a>
       </header>
     );
   }
