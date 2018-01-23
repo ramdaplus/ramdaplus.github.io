@@ -1,0 +1,30 @@
+.Name {
+  padding: 10px 10px;
+  font-size: 25px;
+  font-weight: bold;
+  background: lightgrey;
+}
+
+.Desc {
+  margin-bottom: 10px;
+}
+
+.Container {
+  padding: 10px;
+}
+
+.Since {
+  margin-bottom: 10px;
+}
+
+.Heading {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.Example {
+  margin-bottom: 10px;
+  background-color: #283646;
+  color: antiquewhite;
+  padding: 10px;
+}
