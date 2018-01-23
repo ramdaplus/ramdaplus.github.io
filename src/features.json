@@ -17,5 +17,37 @@
     ], 
     "returns": { "name": "Array/Object", "desc": "returns array or object" }, 
     "example": "function isEven(val) { \n return val % 2 === 0; \n } \n function isEvenObject(val) { \n return val.a % 2 === 0; \n } \n _R.filter([1,2,3], isEven); \n //=> [ 2  ] \n _R.filter([{ a: 1, b: 'abc'  }, { a: 2, b: 'bcd'  }, { a: 3, b: 'cde'  }], isEvenObject); \n //=> [ { a: 2, b: 'bcd'  }  ] \n _R.filter( { a: 1, b: 2, c: 3  }, isEven ); \n //=> [ { b: 2  }  ]"
+  },
+  { 
+    "heading": "_R.find", 
+    "desc": "Finds the first matched element in the array", 
+    "since": "0.0.1", 
+    "arguments": [ 
+      { "arg": "array(Array)", "desc": "The array where element needs to be find" }
+    ], 
+    "returns": { "name": "Array", "desc": "returns array" }, 
+    "example": "_R.find([1,2,3], 2); //=> [ 2  ] \n _R.find([{ a: 1, b: 'abc'  }, { a: 2, b: 'bcd'  }, { a: 3, b: 'cde'  }], 2, 'a'); //=> [ { a: 2, b: 'bcd'  }  ] \n _R.find([{ a: 1, b: 'abc'  }, { a: 2, b: 'bcd'  }, { a: 3, b: 'cde'  }], 'bcd', 'b'); //=> [ { a: 2, b: 'bcd'  }  ]"
+  },
+  { 
+    "heading": "_R.map", 
+    "desc": "Returns a new array after applying the function", 
+    "since": "0.0.1", 
+    "arguments": [ 
+      { "arg": "array(Array)", "desc": "The array where function needs to be applied" },
+      { "arg": "object(Object)", "desc": "The object where function needs to be applied" }
+    ], 
+    "returns": { "name": "Array/Object", "desc": "returns array or object" }, 
+    "example": "function double(val) { \n return val * 2; \n } \n _R.map([1,2,3], double); //=> [2, 4, 6 ] \n _R.map({ a: 1, b: 2, c: 3  }, double); //=> { a: 2, b: 4, c: 6  } \n _R.map([ { a: 1, b: 2, c: 3  }, { d: 4, e: 5, f: 6  }  ], double); //=> [ { a: 2, b: 4, c: 6  }, { d: 8, e: 10, f: 12  }  ]"
+  },
+  { 
+    "heading": "_R.merge", 
+    "desc": "Returns a new array after applying the function", 
+    "since": "0.0.1", 
+    "arguments": [ 
+      { "arg": "array(Array)", "desc": "The array where function needs to be applied" },
+      { "arg": "object(Object)", "desc": "The object where function needs to be applied" }
+    ], 
+    "returns": { "name": "Array/Object", "desc": "returns array or object" }, 
+    "example": "function double(val) { \n return val * 2; \n } \n _R.map([1,2,3], double); //=> [2, 4, 6 ] \n _R.map({ a: 1, b: 2, c: 3  }, double); //=> { a: 2, b: 4, c: 6  } \n _R.map([ { a: 1, b: 2, c: 3  }, { d: 4, e: 5, f: 6  }  ], double); //=> [ { a: 2, b: 4, c: 6  }, { d: 8, e: 10, f: 12  }  ]"
   }
 ]
