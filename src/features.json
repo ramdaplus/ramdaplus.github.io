@@ -1,6 +1,6 @@
 [
   { 
-    "heading": "_R.sum", 
+    "heading": "_R.sum( array )", 
     "desc": " Adds up all the elements of the array ", 
     "since": "0.0.1", 
     "arguments": [ { "arg": "array(Array)", "desc": "The array whose sum to be calculated" } ], 
@@ -58,5 +58,25 @@
     ], 
     "returns": { "name": "( * )", "desc": "Returns the first element of the array" }, 
     "example": "_.head([1, 2, 3]); \n // => 1 \n _.head([]); \n // => undefined"
+  },
+  { 
+    "heading": "_R.merge( object, object )", 
+    "desc": "Merges two objects upto first level", 
+    "since": "0.1.3", 
+    "arguments": [ 
+      { "arg": "( Object )", "desc": "The object which needs to be merged" }
+    ], 
+    "returns": { "name": "( Object )", "desc": "Returns combined object" }, 
+    "example": "const obj1 = { a: 1, b:2, c:3 }; \n const obj2 = {  a:4, d: 5, c: 6 } \n _R.merge(obj1, obj2) \n //=> { a: 4, b: 2, c: 6, d: 5 } \n const obj3 = { a:1, b:2, c:3, e: { a: 3  }  }; \n const obj4 = { a:4, d: 5, c: 6, e: { d: 5  } }; \n _R.merge(obj3, obj4) \n //=> { a: 4, b: 2, c: 6, e: { d: 5  }, d: 5  }"
+  },
+  { 
+    "heading": "_R.camelCase( object )", 
+    "desc": "Converts the object keys from SnakeCase to camelCase", 
+    "since": "0.1.3", 
+    "arguments": [ 
+      { "arg": "( Object )", "desc": "The object" }
+    ], 
+    "returns": { "name": "( Object )", "desc": "Returns Object with camelCase keys" }, 
+    "example": "const a = { Afc: 1, ffd: 2, FGf: { DFg: 23  }  }; \n _R.camelCase(a); \n //=> { afc: 1, ffd: 2, fGf: { dFg: 23  }  }"
   }
 ]
