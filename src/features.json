@@ -48,5 +48,15 @@
     ], 
     "returns": { "name": "( Object )", "desc": "Returns new object" }, 
     "example": "_.fromPairs([['a', 1], ['b', 2]]); \n // => { 'a': 1, 'b': 2  }"
+  },
+  { 
+    "heading": "_R.head(array)", 
+    "desc": "Gets the first element of the array", 
+    "since": "0.3.3", 
+    "arguments": [ 
+      { "arg": "array(Array)", "desc": "The array to query" }
+    ], 
+    "returns": { "name": "( * )", "desc": "Returns the first element of the array" }, 
+    "example": "_.head([1, 2, 3]); \n // => 1 \n _.head([]); \n // => undefined"
   }
 ]
