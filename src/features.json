@@ -38,5 +38,15 @@
     ], 
     "returns": { "name": "Array/Object", "desc": "returns array or object" }, 
     "example": "function double(val) { \n return val * 2; \n } \n _R.map([1,2,3], double); //=> [2, 4, 6 ] \n _R.map({ a: 1, b: 2, c: 3  }, double); //=> { a: 2, b: 4, c: 6  } \n _R.map([ { a: 1, b: 2, c: 3  }, { d: 4, e: 5, f: 6  }  ], double); //=> [ { a: 2, b: 4, c: 6  }, { d: 8, e: 10, f: 12  }  ]"
+  },
+  { 
+    "heading": "_R.fromPairs(pairs)", 
+    "desc": "Returns an object composed of key-value pairs", 
+    "since": "0.3.2", 
+    "arguments": [ 
+      { "arg": "pairs(Array)", "desc": "The Key-Value Pairs" }
+    ], 
+    "returns": { "name": "( Object )", "desc": "Returns new object" }, 
+    "example": "_.fromPairs([['a', 1], ['b', 2]]); \n // => { 'a': 1, 'b': 2  }"
   }
 ]
