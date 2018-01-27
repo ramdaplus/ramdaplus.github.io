@@ -78,5 +78,15 @@
     ], 
     "returns": { "name": "( Object )", "desc": "Returns Object with camelCase keys" }, 
     "example": "const a = { Afc: 1, ffd: 2, FGf: { DFg: 23  }  }; \n _R.camelCase(a); \n //=> { afc: 1, ffd: 2, fGf: { dFg: 23  }  }"
+  },
+  { 
+    "heading": "_R.intersection([ arrays ])", 
+    "desc": "Creates an array of unique values that are included in all given array", 
+    "since": "0.3.12", 
+    "arguments": [ 
+      { "arg": "[ arrays ] ( ...Array )", "desc": "The arrays to inspect" }
+    ], 
+    "returns": { "name": "( Array )", "desc": "Returns the new array of intersecting values." }, 
+    "example": "_R.intersection( [ 1,2 ], [ 2,3 ] ); \n //=> [ 2 ]"
   }
 ]
