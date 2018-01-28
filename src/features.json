@@ -99,5 +99,15 @@
     ], 
     "returns": { "name": "(string)", "desc": "Returns a joined sgtring" }, 
     "example": "_.join(['a', 'b', 'c'], '~'); \n // => 'a~b~c'"
+  },
+  { 
+    "heading": "_R.last( array )", 
+    "desc": "Gets the last element of the array.", 
+    "since": "0.3.14", 
+    "arguments": [ 
+      { "arg": "array ( Array )", "desc": "The array to query" }
+    ], 
+    "returns": { "name": "( * )", "desc": "Returns the last element of the array" }, 
+    "example": "_.last([ 1, 2, 3 ]); \n // => '3'"
   }
 ]
