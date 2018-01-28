@@ -88,5 +88,16 @@
     ], 
     "returns": { "name": "( Array )", "desc": "Returns the new array of intersecting values." }, 
     "example": "_R.intersection( [ 1,2 ], [ 2,3 ] ); \n //=> [ 2 ]"
+  },
+  { 
+    "heading": "_R.join( array, [ seperator=',' ] )", 
+    "desc": "Converts all elements in array into a string separated by separator.", 
+    "since": "0.3.13", 
+    "arguments": [ 
+      { "arg": "array ( Array )", "desc": "The array to convert" },
+      { "arg": "[ seperator=',' ] ( string )", "desc": "The element seperator" }
+    ], 
+    "returns": { "name": "(string)", "desc": "Returns a joined sgtring" }, 
+    "example": "_.join(['a', 'b', 'c'], '~'); \n // => 'a~b~c'"
   }
 ]
