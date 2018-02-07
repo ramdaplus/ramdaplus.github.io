@@ -109,5 +109,15 @@
     ], 
     "returns": { "name": "( * )", "desc": "Returns the last element of the array" }, 
     "example": "_.last([ 1, 2, 3 ]); \n // => '3'"
+  },
+  { 
+    "heading": "_R.reverse(array)", 
+    "desc": "Reverses array so that the first element becomes the last, the second element becomes the second to last, and so on.", 
+    "since": "0.3.16", 
+    "arguments": [ 
+      { "arg": "array ( Array )", "desc": "The array to modify" }
+    ], 
+    "returns": { "name": "( Array )", "desc": "Returns array" }, 
+    "example": "var array = [ 1, 2, 3 ]\n _R.reverse(array) \n //=> [ 3, 2, 1 ]"
   }
 ]
