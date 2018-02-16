@@ -119,5 +119,15 @@
     ], 
     "returns": { "name": "( Array )", "desc": "Returns array" }, 
     "example": "var array = [ 1, 2, 3 ]\n _R.reverse(array) \n //=> [ 3, 2, 1 ]"
+  },
+  { 
+    "heading": "_R.toPairs(object)", 
+    "desc": "Converts an object into an array of key, value arrays. Only the object's own properties are used. Note that the order of the output array is not guaranteed to be consistent across different JS platforms.", 
+    "since": "0.3.17", 
+    "arguments": [ 
+      { "arg": "object ( Object )", "desc": "The object which needs to split" }
+    ], 
+    "returns": { "name": "( Array )", "desc": "Returns array" }, 
+    "example": "var object = { a: 1, b: 2 }\n _R.toPairs(object) \n //=> [ [ 'a', 1 ], [ 'b', 2 ] ]"
   }
 ]
