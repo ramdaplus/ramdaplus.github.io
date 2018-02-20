@@ -129,5 +129,15 @@
     ], 
     "returns": { "name": "( Array )", "desc": "Returns array" }, 
     "example": "var object = { a: 1, b: 2 }\n _R.toPairs(object) \n //=> [ [ 'a', 1 ], [ 'b', 2 ] ]"
+  },
+  { 
+    "heading": "_R.invertObj(object)", 
+    "desc": "Returns a new object with the keys of the given object as values, and the values of the given object, which are coerced to strings, as keys. Note that the last key found is preferred when handling the same value.", 
+    "since": "0.3.18", 
+    "arguments": [ 
+      { "arg": "object ( Object )", "desc": "The object needs to be inverted" }
+    ], 
+    "returns": { "name": "object ( Object )", "desc": "Returns inverted object" }, 
+    "example": "var raceResults = { \n first: 'alice', \n second: 'jake' \n }; \n _R.invertObj(raceResults); \n //=> { 'alice': 'first', 'jake':'second'  } \n "
   }
 ]
