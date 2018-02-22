@@ -139,5 +139,16 @@
     ], 
     "returns": { "name": "object ( Object )", "desc": "Returns inverted object" }, 
     "example": "var raceResults = { \n first: 'alice', \n second: 'jake' \n }; \n _R.invertObj(raceResults); \n //=> { 'alice': 'first', 'jake':'second'  } \n "
+  },
+  { 
+    "heading": "_R.zipObj(array1, array2)", 
+    "desc": "Creates a new object out of a list of keys and a list of values. Key/value pairing is truncated to the length of the shorter of the two lists. ", 
+    "since": "0.4.0", 
+    "arguments": [ 
+      { "arg": "array ( Array )", "desc": "The array for the keys" },
+      { "arg": "array ( Array )", "desc": "The second array for the values" }
+    ], 
+    "returns": { "name": "object ( Object )", "desc": "Returns object" }, 
+    "example": "R.zipObj(['a', 'b', 'c'], [1, 2, 3]); //=> {a: 1, b: 2, c: 3}"
   }
 ]
